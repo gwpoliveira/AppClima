@@ -2,9 +2,9 @@ import * as React from 'react';
 import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen from './screens/Home';
-import TesteConcluido from './screens/Teste';
-import CidadeShow from './screens/Cidade';
+import HomeScreen from './src/app/Home';
+import TesteConcluido from './src/app/Teste';
+import CidadeShow from './src/app/Cidade';
 
 
 const Stack = createNativeStackNavigator();

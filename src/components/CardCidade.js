@@ -1,8 +1,5 @@
 import { Text, View, ScrollView, StyleSheet, Image } from 'react-native'
 
-
-
-
 export default function DetailCity() {
     return (
         <ScrollView>

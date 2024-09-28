@@ -72,6 +72,9 @@ export default function ClimaNow() {
                         <Text style={styles.temperature}>
                             {Math.round(weather.main.temp)}°C
                         </Text>
+                        <Text style={styles.tempMinMax}>
+                            Mín: {Math.round(weather.main.temp_min)}°C | Máx: {Math.round(weather.main.temp_max)}°C
+                        </Text>
                         <Text style={styles.weatherDescription}>
                             Clima Atual: {weather.weather[0].description}{"\n"}
                         </Text>
@@ -107,6 +110,11 @@ const styles = StyleSheet.create({
     temperature: {
         fontSize: 96,
         color: '#ffffff',
+    },
+    tempMinMax: {
+        fontSize: 20,
+        color: '#ffffff',
+        marginTop: 10,
     },
     loadingText: {
         fontSize: 18,
